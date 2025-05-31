@@ -24,7 +24,7 @@ void setup()
   bot.begin();
   bot.showLogo(LOGO_ROBOTIX);
   bot.rjSrfInit(SRF_PORT);
-  bot.rjIrInit(SW_PORT);
+  bot.rjSwRead(SW_PORT);
 
 
 
