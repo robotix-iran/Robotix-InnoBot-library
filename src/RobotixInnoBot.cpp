@@ -411,12 +411,12 @@ int RobotixInnoBot::rjVlxRead(rj_port port)
 uint8_t RobotixInnoBot::rjSwInit(rj_port &port)
 {
   port.type = MOD_SWITCH;
-  pinMode(port.pin_B, INPUT_PULLUP);
+  pinMode(port.pin_A, INPUT);
 }
 
 uint8_t RobotixInnoBot::rjSwRead(rj_port port)
 {
-  return digitalRead(port.pin_B);
+  return digitalRead(port.pin_A);
 }
 
 uint8_t RobotixInnoBot::rjLedInit(rj_port &port)
